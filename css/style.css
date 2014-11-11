@@ -1,0 +1,20 @@
+@charset "utf-8";
+.bottomNav{position:absolute;width:80%;left:10%;bottom:15%;}
+.bottomNav dt{width:100%;height:3px;background:#fff}
+.bottomNav dd{position:relative;width:7.53%;float:left;height:30px;}
+.navDotted{position:absolute;width:10px;height:10px;border-radius:10px;border:2px solid #fff;background:rgb(232,0,31);top:-8px;left:-5px;cursor:pointer;}
+.navHoverP{position:absolute;left:-25%;top:10px;color:rgb(232,0,31);font-weight:bold;}
+.bottomNav dd:last-child{width:10px;}
+.bottomNav dd:last-child .navDotted{left:110%;}
+.bottomNav dd:last-child .navHoverP{white-space:nowrap;}
+.bigNav .navDotted{width:20px;height:20px;left:-10px;top:-14px;border-radius:15px;}
+
+.diyTra{left:0;}
+.active .diyTra{left:30%;}
+.usertransition {
+-webkit-transition: all .9s ease-in .1s;
+-moz-transition: all .9s ease-in .1s;
+-o-transition: all .9s ease-in .1s;
+-ms-transition: all .9s ease-in .1s;
+transition: all .9s ease-in .1s;
+}
