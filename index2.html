@@ -4,13 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<!--<link rel="stylesheet" type="text/css" href="css/index1.css" media="screen and (min-width:1280px)">-->
+<!--<link rel="stylesheet" type="text/css" href="css/index1.css" media="screen and (min-width:1280px)">
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.min.js"></script>
 <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-<!-- <script type="text/javascript" src="js/liam.js"></script> -->
-<!-- <script type="text/javascript" src="js/js.js"></script> -->
+ <script type="text/javascript" src="js/liam.js"></script>
+ <script type="text/javascript" src="js/js.js"></script> -->
 <title>2015</title>
 </head>
 
@@ -40,7 +40,7 @@
     	
     <!-- page1 -->
     <div class="same">
-    	<div class="page">
+    	<div class="page" id="page1">
 		<div class="page_bg"><img src="images/box1_bg.jpg" /></div>
         <div class="topB"><img src="images/text-top-title.png" /></div>
         <div class="topB t2"><img src="images/text-top-intro.png" /></div>
@@ -53,7 +53,7 @@
     </div>	
     <!-- page2 -->
     <div class="same">
-    	<div class="page">
+    	<div class="page" id="page2">
 		<div class="page_bg"><img src="images/box2_bg.jpg" /></div>
         <div class="topB "><img src="images/text-top-title.png" /></div>
         <div class="topB t2"><img src="images/pic03.png" /></div>
@@ -62,10 +62,8 @@
     </div>	
     <!-- page3  e-tron详情页 -->
     <div class="same">
-    	<div class="page">
-		<div class="page_bg"><img src="images/page2_bg1.png" />
-            <div class="date3 date"><img src="images/date3_bg.png" /></div>
-        </div>
+    	<div class="page" id="page3">
+		<div class="page_bg"><img src="images/page2_bg1.png" /></div>
         <div class="date1 date"><img src="images/date1_bg.png" /></div>
         <div class="date2 date diyTra usertransition"><img src="images/date2_bg.png" /></div>
         <div class="date3 date"><img src="images/date3_bg.png" /></div>
@@ -75,7 +73,7 @@
     </div>	
     <!-- page4 -->
     <div class="same">
-    	<div class="page">
+    	<div class="page" id="page4">
     	<div class="page_bg"><img src="images/pic36.png" /></div>
         <div class="movecar">
             <img class="car" src="images/both.png" />
@@ -86,7 +84,7 @@
     </div>
     <!-- page5 -->
     <div class="same">
-    	<div class="page">
+    	<div class="page" id="page5">
     	<div class="page_bg page_bg2"><img src="images/pic37.png" /></div>
         <div class="movecar">
             <img class="car" src="images/both.png" />
@@ -102,7 +100,7 @@
     </div>	
     <!-- page6 -->
     <div class="same">
-    	<div class="page">
+    	<div class="page" id="page6">
     	<div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="page_bg tao1"><img src="images/pic11.png" /></div>
         <div class="topB"><img src="images/pic05.png" /></div>
@@ -113,31 +111,31 @@
     </div>	
     <!-- page7 -->
     <div class="same">
-    	<div class="page">
+    	<div class="page" id="page7">
     	<div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="page_bg tao2"><img src="images/pic19.png" /></div>
         <div class="topB"><img src="images/pic14.png" /></div>
         <div class="topB t2"><img src="images/pic15.png" /></div>
-        <div class="topB t9"><img src="images/pic16.png" /></div>
-        <div class="topB t10"><img src="images/pic17.png" /></div>
-        <div class="topB t11"><img src="images/pic18.png" /></div>
+        <div class="topB t9"><a href="#"><img src="images/pic16.png" /></a></div>
+        <div class="topB t10"><a href="#"><img src="images/pic17.png" /></a></div>
+        <div class="topB t11"><a href="#"><img src="images/pic18.png" /></a></div>
     	</div>
     </div>	
     <!-- page8  g-tron详情页 -->
     <div class="same">
-    	<div class="page">
+    	<div class="page" id="page8">
     	<div class="page_bg"><img src="images/pic37.png" /></div>
-        <div class="page_bg tao3"><img src="images/pic19.png" /></div>
+        <div class="page_bg tao3"><img src="images/gc03.png" /></div>
         <div class="topB"><img src="images/pic14.png" /></div>
         <div class="topB t2"><img src="images/pic15.png" /></div>
-        <div class="topB t9"><img src="images/pic16.png" /></div>
-        <div class="topB t10"><img src="images/pic17.png" /></div>
-        <div class="topB t40"><img src="images/pic18.png" /></div>
+        <div class="topB gc1"><img src="images/gc01.png" /></div>
+        <div class="topB gc2"><img src="images/gc02.png" /></div>
+        <div class="topB gc3"><img src="images/gc04.png" /></div>
     	</div>
     </div>	
     <!-- page9 -->
     <div class="same">
-    	<div class="page">
+    	<div class="page" id="page9">
     	<div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="page_bg tao4"><img src="images/pic20.png" /></div>
         <div class="topB"><img src="images/pic22.png" /></div>
@@ -149,16 +147,26 @@
     </div>	
     <!-- page10   发动机详情页 -->
     <div class="same">
-    	<div class="page">
+    	<div class="page" id="page10">
     	<div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="page_bg tao5"><img src="images/pic26.png" /></div>
         <div class="topB"><img src="images/pic27.png" /></div>
         <div class="topB t2"><img src="images/pic28.png" /></div>
+        <div class="topB ta2"><img src="images/pic28.png" /></div>
+        <div class="topB tb2"><img src="images/pic28.png" /></div>
+        <div class="topB hx01"><img src="images/hx01.png" /></div>
+        <div class="topB hx02"><img src="images/hx02.png" /></div>
+        <div class="topB hx03"><img src="images/hx03.png" /></div>
+        <div class="topB hx04"><img src="images/hx04.png" /></div>
+        <div class="topB wz01"><img src="images/wz01.png" /></div>
+        <div class="topB wz02"><img src="images/wz02.png" /></div>
+        <div class="topB wz03"><img src="images/wz03.png" /></div>
+        <div class="topB wz04"><img src="images/wz04.png" /></div>
     	</div>
     </div>	
     <!-- page11 -->
     <div class="same">
-    	<div class="page">
+    	<div class="page" id="page11">
     	<div class="page_bg"><img src="images/aaaa.jpg"/></div>
         <div class="topB t16"><img src="images/left-title.png" /></div>
         <div class="topB t15"><img src="images/right-title.png" /></div>
@@ -177,7 +185,7 @@
     </div>
     <!-- page12 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page12">
         <div class="page_bg"><img src="images/box3_bg.jpg" /></div>
         <div class="topB"><img src="images/pic29.png" /></div>
         <div class="topB t2"><img src="images/pic30.png" /></div>
@@ -185,7 +193,7 @@
     </div>
     <!-- page13 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page13">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB tao6"><img src="images/qiu.png" /></div>
         <div class="topB hu01"><img src="images/hu01.png" /></div>
@@ -199,11 +207,15 @@
         <div class="topB hu09"><img src="images/hu09.png" /></div>
         <div class="topB t41"><img src="images/pic38.png" /></div>
         <div class="topB t42"><img src="images/pic39.png" /></div>
+        <div class="topB fg01"><img src="images/fg03.png" /></div>
+        <div class="topB fg02"><img src="images/fg02.png" /></div>
+        <div class="topB fg03"><img src="images/fg04.png" /></div>
+        <div class="topB fg04"><img src="images/fg01.png" /></div>
         </div>
     </div>
     <!-- page14 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page14">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB tao7"><img src="images/pic31.png" /></div>
         <div class="topB t28"><img src="images/a1.png" /></div>
@@ -220,15 +232,15 @@
     </div>
     <!-- page15 -->
     <div class="same">
-        <div class="page">
-        <div class="page_bg"><img src="images/anquan.png" /></div>
+        <div class="page" id="page15">
+        <div class="page_bg"><img src="images/anquan.jpg" /></div>
         <div class="topB"><img src="images/an-title.png" /></div>
         <div class="topB t39"><img src="images/pic32.png" /></div>
         </div>
     </div>
     <!-- page16 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page16">
         <div class="page_bg"><img src="images/pic41.png" /></div>
         <div class="page_bg tao9"><img src="images/main.png" /></div>
         <div class="topB tao10"><img src="images/pic34.png" /></div>
@@ -242,7 +254,7 @@
     </div>
     <!-- page17 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page17">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/pic40.png" /></div>
         <div class="topB t43"><img src="images/pic42.png" /></div>
@@ -256,7 +268,7 @@
     </div>
     <!-- page18 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page18">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/pic43.png" /></div>
         <div class="topB t50"><img src="images/pic50.png" /></div>
@@ -271,6 +283,7 @@
             var oF=$('.fen');
             var oBoxL=$('.box').offset().left;
             $('.car02').css('width',2+$(oF).offset().left-oBoxL);
+
             
             $(oF).mousedown(function(ev){
                 var ev=ev||event;
@@ -301,7 +314,7 @@
     </div>
     <!-- page19 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page19">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/pic43.png" /></div>
         <div class="topB t50"><img src="images/pic50.png" /></div>
@@ -312,7 +325,7 @@
     </div>
     <!-- page20 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page20">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/pic53.png" /></div>
         <div class="topB t55"><img src="images/pic06.png" /></div>
@@ -325,7 +338,7 @@
     </div>
     <!-- page21 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page21">
         <div class="page_bg"><img src="images/pic54.jpg" /></div>
         <div class="topB t61"><img src="images/pic55.png" /></div>
         <div class="topB t62"><img src="images/pic56.png" /></div>
@@ -333,7 +346,7 @@
     </div>
     <!-- page22 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page22">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB t63"><img src="images/pic60.png" /></div>
         <div class="topB t64"><img src="images/pic61.png" /></div>
@@ -344,7 +357,7 @@
     </div>
     <!-- page23 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page23">
         <div class="page_bg"><img src="images/pic62.jpg" /></div>
         <div class="topB"><img src="images/pic63.png" /></div>
         <div class="topB t68"><img src="images/pic64.png" /></div>
@@ -352,7 +365,7 @@
     </div>
     <!-- page24 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page24">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/pic65.png" /></div>
         <div class="topB tLight1"><img src="images/light_1.png" /></div>
@@ -371,7 +384,7 @@
     </div>
     <!-- page25 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page25">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/pic65.png" /></div>
         <div class="topB bh01"><img src="images/pic66.png" /></div>
@@ -382,7 +395,7 @@
     </div>
     <!-- page26 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page26">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/pic65.png" /></div>
         <div class="topB bh05"><img src="images/po01.png" /></div>
@@ -393,7 +406,7 @@
     </div>
     <!-- page27 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page27">
         <div class="page_bg"><img src="images/aaaa.jpg"/></div>
         <div class="topB bh09"><img src="images/po05.png" /></div>
         <div class="topB bh10"><img src="images/po06.png" /></div>
@@ -415,7 +428,7 @@
     </div>
     <!-- page28 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page28">
         <div class="page_bg"><img src="images/quattrobj.jpg" /></div>
         <div class="topB"><img src="images/qu01.png" /></div>
         <div class="topB bh25"><img src="images/qu02.png" /></div>
@@ -426,7 +439,7 @@
     </div>
     <!-- page29 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page29">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/qu06.png" /></div>
         <div class="topB bh25"><img src="images/qu07.png" /></div>
@@ -435,7 +448,7 @@
     </div>
     <!-- page30 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page30">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/qu06.png" /></div>
         <div class="topB bh25"><img src="images/qu07.png" /></div>
@@ -446,7 +459,7 @@
     </div>
     <!-- page31 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page31">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/qu06.png" /></div>
         <div class="topB bh32"><img src="images/qu14.png" /></div>
@@ -457,7 +470,7 @@
     </div>
     <!-- page32 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page32">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/qu17.png" /></div>
         <div class="topB ca1"><img src="images/a1.png" /></div>
@@ -475,7 +488,7 @@
     </div>
     <!-- page33 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page33">
         <div class="page_bg"><img src="images/ja01.jpg" /></div>
         <div class="topB"><img src="images/ja02.png" /></div>
         <div class="topB bh36"><img src="images/ja03.png" /></div>
@@ -483,7 +496,7 @@
     </div>
     <!-- page34 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page34">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/ja04.png" /></div>
         <div class="topB bh37"><img src="images/ja05.png" /></div>
@@ -495,7 +508,7 @@
     </div>
     <!-- page35 -->
     <div class="same">
-        <div class="page">
+        <div class="page" id="page35">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/ja09.png" /></div>
         <div class="topB mo1"><img src="images/ja10.png" /></div>
@@ -607,59 +620,6 @@ function lazyLoadImg(container){
             $(img).attr('lazy-img','');
         }
     });
-}
-// 自适应
-window.onresize=function(){
-    var webWidth=1640;
-    var webHeight=960;
-    var section2ContentH=598;
-    var section4CarW=1159;
-    var section4CarH=558;
-    var section7ContentW=1400;
-    var section20ContainerW=963;
-    var section20ContainerH=423;
-
-    var documentWidth = parseInt(document.documentElement.clientWidth);
-    var documentHeight = parseInt(document.documentElement.clientHeight);
-    var sw=documentWidth/webWidth;
-    var sh=documentHeight/webHeight;
-    var scaleToMax=(sw>sh)?sw:sh;
-    var scaleToMin=(sw<sh)?sw:sh;
-    var widthTo=scaleToMax*webWidth;
-    var heightTo=scaleToMax*webHeight;
-
-    // $('#popup').css({'height':documentHeight+'px'});
-    $('#menu_left_content').css({height:sw*238});
-    $(".page_bg").css({position:"absolute",width:widthTo,height:heightTo,left:(documentWidth-widthTo)/2,top:(documentHeight-heightTo)/2});
-    /*$(".section_container").css({width:widthTo,height:heightTo,left:(documentWidth-widthTo)/2,top:(documentHeight-heightTo)/2});
-    $("#intro").css({width:documentWidth,height:documentHeight});
-
-    $(".intro_bg").css({
-        width:widthTo,
-        height:heightTo,
-        left:(documentWidth-widthTo)/2+"px",
-        top:(documentHeight-heightTo)/2+"px"
-    });
-    $(".section2_container_content").css({
-        width:"100%",
-        height:sw*section2ContentH,
-        left:0,
-        top:(sh*section2ContentH-sw*section2ContentH)/2
-    });
-    $('.section4_car_container').css({
-        width:section4CarW*sh,
-        height:section4CarH*sh
-    });
-    $(".section7_content").css({
-        width:sh*section7ContentW,
-        height:"100%",
-        left:(documentWidth-sh*section7ContentW)/2,
-        top:0
-    });
-    $('.section20_container').css({
-        width:sw*section20ContainerW,
-        height:sw*section20ContainerH
-    });*/
 }
 $(document).ready(function() {
     $('#content').fullpage({
