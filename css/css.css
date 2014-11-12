@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.diyTra{top:0%;opacity:0;}
+.active .diyTra{top:10%;opacity:1;}
+.diyTra1{top:0%;opacity:0;}
+.active .diyTra1{top:25%;opacity:1;}
+.usertransition {
+-webkit-transition: all .9s ease-in .2s;
+-moz-transition: all .9s ease-in .2s;
+-o-transition: all .9s ease-in .2s;
+-ms-transition: all .9s ease-in .2s;
+transition: all .9s ease-in .2s;
+}

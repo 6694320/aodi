@@ -9,12 +9,3 @@
 .bottomNav dd:last-child .navHoverP{white-space:nowrap;}
 .bigNav .navDotted{width:20px;height:20px;left:-10px;top:-14px;border-radius:15px;}
 
-.diyTra{left:0;}
-.active .diyTra{left:30%;}
-.usertransition {
--webkit-transition: all .9s ease-in .1s;
--moz-transition: all .9s ease-in .1s;
--o-transition: all .9s ease-in .1s;
--ms-transition: all .9s ease-in .1s;
-transition: all .9s ease-in .1s;
-}
