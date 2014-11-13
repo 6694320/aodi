@@ -9,6 +9,7 @@
 <script type="text/javascript" src="js/jquery.easing.min.js"></script>
 <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<script src="js/diyAPI.js"></script>
 <title>2015</title>
 </head>
 
@@ -39,7 +40,7 @@
     <!-- page1 -->
     <div class="same">
     	<div class="page page1">
-		<div class="page_bg"><img src="images/box1_bg.jpg" /></div>
+		<div class="page_bg adaptive"><img src="images/box1_bg.jpg" /></div>
         <div class="topB diyTra usertransition"><img src="images/text-top-title.png" /></div>
         <div class="topB t2 diyTra1 usertransition"><img src="images/text-top-intro.png" /></div>
         <div class="bottomT">
@@ -52,7 +53,7 @@
     <!-- page2 -->
     <div class="same">
     	<div class="page page2">
-		<div class="page_bg"><img src="images/box2_bg.png" /></div>
+		<div class="page_bg adaptive"><img src="images/box2_bg.png" /></div>
         <div class="topB "><img src="images/text-top-title.png" /></div>
         <div class="topB t2"><img src="images/pic03.png" /></div>
         <div class="topB t3"><a href="#"><img src="images/pic04.png" /></a></div>
@@ -101,7 +102,7 @@
     <div class="same">
     	<div class="page page6">
     	<div class="page_bg"><img src="images/pic37.png" /></div>
-        <div class="page_bg tao1"><img src="images/pic11.png" /></div>
+        <div class="page_bg tao1 pop" data-htmlVedio="http://audiclub.trioisobarcdn.com/a8l/flv/section2/section2_lls.mp4"><img src="images/pic11.png" /></div>
         <div class="topB"><img src="images/pic05.png" /></div>
         <div class="topB t2"><img src="images/pic06.png" /></div>
         <div class="topB t7"><img src="images/pic12.png" /></div>
@@ -169,9 +170,12 @@
     	<div class="page_bg"><img src="images/aaaa.jpg"/></div>
         <div class="topB t16"><img src="images/left-title.png" /></div>
         <div class="topB t15"><img src="images/right-title.png" /></div>
+        <div class="graybox">
         <div class="topB t17"><img src="images/a1.png" /></div>
         <div class="topB t18"><img src="images/a3.png" /></div>
         <div class="topB t19"><img src="images/a4l.png" /></div>
+        </div>
+        <div class="graybox">
         <div class="topB t20"><img src="images/a5.png" /></div>
         <div class="topB t21"><img src="images/a6l.png" /></div>
         <div class="topB t22"><img src="images/a7.png" /></div>
@@ -180,12 +184,13 @@
         <div class="topB t25"><img src="images/q5.png" /></div>
         <div class="topB t26"><img src="images/q7.png" /></div>
         <div class="topB t27"><img src="images/r8.png" /></div>
+        </div>
     	</div>
     </div>
     <!-- page12 -->
     <div class="same">
         <div class="page page12">
-        <div class="page_bg"><img src="images/box3_bg.jpg" /></div>
+        <div class="page_bg adaptive"><img src="images/box3_bg.jpg" /></div>
         <div class="topB"><img src="images/pic29.png" /></div>
         <div class="topB t2"><img src="images/pic30.png" /></div>
         </div>
@@ -217,6 +222,7 @@
         <div class="page page14">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB tao7"><img src="images/pic31.png" /></div>
+        <div class="graybox">
         <div class="topB t28"><img src="images/a1.png" /></div>
         <div class="topB t29"><img src="images/a3.png" /></div>
         <div class="topB t30"><img src="images/a4l.png" /></div>
@@ -227,6 +233,7 @@
         <div class="topB t35"><img src="images/q3.png" /></div>
         <div class="topB t36"><img src="images/q5.png" /></div>
         <div class="topB t37"><img src="images/r8.png" /></div>
+        </div>
         </div>
     </div>
     <!-- page15 -->
@@ -257,12 +264,19 @@
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/pic40.png" /></div>
         <div class="topB t43"><img src="images/pic42.png" /></div>
+        <div class="topB t47"><img src="images/pic46.png" /></div>
+        <div class="topB t46"><img src="images/pic45.png" /></div>
+        <div class="page17box1" style="display:none">
         <div class="topB t44"><img src="images/pic43.png" /></div>
         <div class="topB t45"><img src="images/pic440.png" /></div>
         <div class="topB t450"><img src="images/pic44.png" /></div>
-        <div class="topB t47"><img src="images/pic46.png" /></div>
-        <div class="topB t46"><img src="images/pic45.png" /></div>
         <div class="t48"><img src="images/pic47.jpg" /></div>
+        </div>
+        <div class="page17box2" style="display:none">
+        <div class="topB t44b"><img src="images/pic43.png" /></div>
+        <div class="topB t450b"><img src="images/pic44.png" /></div>
+        <div class="topB t49b"><img src="images/pic48.png" /></div>
+        </div>
         </div>
     </div>
     <div class="same">
@@ -294,7 +308,7 @@
         $(function(){
             var oF=$('.fen');
             var oBoxL=$('.box').offset().left;
-            $('.car02').css('width',2+$(oF).offset().left-oBoxL);
+            $('.car02').css('width',30+$(oF).offset().left-oBoxL);
 
             
             $(oF).mousedown(function(ev){
@@ -305,13 +319,13 @@
                     var T=ev.clientX-disX;
                     if(T<0){
                         T=0;
-                    }else if(T>890){
-                        T=890;
+                    }else if(T>993){
+                        T=993;
                     }
-                    $(oF).css('left',T+'px');
-                    $('.car02').css('width',2+$(oF).offset().left-oBoxL);
-                    if($(oF).offset().left>890){
-                        $(oF).offset().left=890;
+                    $(oF).css('left',T-30+'px');
+                    $('.car02').css('width',30+$(oF).offset().left-oBoxL);
+                    if($(oF).offset().left>993){
+                        $(oF).offset().left=993;
                     }
                 }
                 document.onmouseup=function(){
@@ -341,11 +355,13 @@
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/pic53.png" /></div>
         <div class="topB t55"><img src="images/pic06.png" /></div>
+        <div class="graybox">
         <div class="topB t56"><img src="images/a3.png" /></div>
         <div class="topB t57"><img src="images/a6l.png" /></div>
         <div class="topB t58"><img src="images/a7.png" /></div>
         <div class="topB t59"><img src="images/a8l.png" /></div>
         <div class="topB t60"><img src="images/r8.png" /></div>
+        </div>
         </div>
     </div>
     <!-- page21 -->
@@ -422,8 +438,11 @@
         <div class="page_bg"><img src="images/aaaa.jpg"/></div>
         <div class="topB bh09"><img src="images/po05.png" /></div>
         <div class="topB bh10"><img src="images/po06.png" /></div>
+        <div class="graybox">
         <div class="topB t17 bh11"><img src="images/r18.png" /></div>
         <div class="topB t18 bh12"><img src="images/sport.png" /></div>
+        </div>
+        <div class="graybox">
         <div class="topB bh13"><img src="images/a5.png" /></div>
         <div class="topB bh14"><img src="images/a6l.png" /></div>
         <div class="topB bh15"><img src="images/a7.png" /></div>
@@ -436,6 +455,7 @@
         <div class="topB bh22"><img src="images/q5.png" /></div>
         <div class="topB bh23"><img src="images/q7.png" /></div>
         <div class="topB bh24"><img src="images/r8.png" /></div>
+        </div>
         </div>
     </div>
     <!-- page28 -->
@@ -469,6 +489,7 @@
         <div class="topB bh29"><img src="images/qu09.png" /></div>
         <div class="topB bh30"><img src="images/qu10.png" /></div>
         <div class="topB bh31"><img src="images/qu11.png" /></div>
+        <div class="topB bh31"><img src="images/qu11hover.png" /></div>
         </div>
     </div>
     <!-- page31 -->
@@ -487,6 +508,7 @@
         <div class="page page32">
         <div class="page_bg"><img src="images/pic37.png" /></div>
         <div class="topB"><img src="images/qu17.png" /></div>
+        <div class="graybox">
         <div class="topB ca1"><img src="images/a1.png" /></div>
         <div class="topB ca2"><img src="images/a3.png" /></div>
         <div class="topB ca3"><img src="images/a4l.png" /></div>
@@ -498,6 +520,7 @@
         <div class="topB ca9"><img src="images/a5.png" /></div>
         <div class="topB ca10"><img src="images/a7.png" /></div>
         <div class="topB ca11"><img src="images/a7.png" /></div>
+        </div>
         </div>
     </div>
     <!-- page33 -->
@@ -618,53 +641,20 @@
     </div>
 </div>
 <!-- footer -->
-<script>
-// 底部导航点击跳转
-function gopage(page){
-    $.fn.fullpage.moveTo(page,0);
-}
-// 延迟加载
-function lazyLoadImg(container){
-    var imgSelect=container+" img";
-    $(imgSelect).each(function(index,img){
-        var lazySrc=$(img).attr('lazy-img');
-        if(lazySrc){
-            lazySrc=audiAPI.StaticURL+lazySrc+audiAPI.random();
-            $(img).attr('src',lazySrc);
-            $(img).attr('lazy-img','');
-        }
-    });
-}
-$(document).ready(function() {
-    $('#content').fullpage({
-        //Navigation
-        anchors:['page1','page2','page3','page4', 'page5','page6','page7','page8','page9', 'page10','page11','page12','page13','page14','page15', 'page16','page17','page18','page19','page20', 'page21','page22','page23','page24','page25', 'page26','page27','page28','page29','page30', 'page31','page32','page33','page34','page35'],
-        //Scrolling
-        css3: false,
-        scrollingSpeed: 700,
-        autoScrolling: true,
-        easing: 'easeInQuart',
-        easingcss3: 'ease',
-        
-        normalScrollElements: '#header,#footer',
-        scrollOverflow: false,
-        touchSensitivity:2,
-        normalScrollElementTouchThreshold:5,
-        fixedElements: '#header,#footer',
-        responsive: 0,
-        //Custom selectors
-        sectionSelector: '.same',
-        // slideSelector: '.slide',
-        //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){
-        },
-        afterRender: function(){},
-        afterResize: function(){},
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction){}
-    });
-});
-</script>
+
+<!-- 弹框 -->
+<style>
+input:focus{outline:none;}
+    .pop_box{width:80%;position:absolute;z-index:999999;border-radius:6px;}
+    .pop_titl{height:30px;}
+    .close{top:40px;color:#FFF;position:absolute;left:97%;display:block;width:8%;font-size:18px;font-family: cursive;z-index: 999999;}
+    
+</style>
+<div class="pop_box" style="display:none">
+    <h2 class="pop_titl"><a href="javascript:void(0);" class="close">X</a></h2>
+    <div class="pop1" style="display:block">
+        <video src="" width="730" height="406" controls autoplay="autoplay" id="popVedio"></video>
+    </div>
+</div>                                            
 </body>
 </html>
